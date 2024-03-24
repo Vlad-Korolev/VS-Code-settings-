@@ -1,8 +1,12 @@
 // Конфигурация VS Code (v.1.82) для отдельного проекта 
 {   
     // [Общие настройки]
-    "files.autoSave": "onFocusChange", // автоматически сохранять файл при переключенни на другое окно
-    "python.terminal.activateEnvInCurrentTerminal": true, // автоматически активировать виртуальное окружение
+    // автоматически сохранять файл при переключенни на другое окно
+    "files.autoSave": "onFocusChange", 
+    // автоматически активировать виртуальное окружение
+    "python.terminal.activateEnvInCurrentTerminal": true, 
+    // Выделяем цветом разные  скобки
+    "editor.guides.bracketPairs": true,
     
 
     // [Настройки форматтера (расширение "Black Formatter")]
