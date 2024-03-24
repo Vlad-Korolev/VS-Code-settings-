@@ -1,0 +1,37 @@
+// Конфигурация VS Code (v.1.82) для отдельного проекта 
+{   
+    // [Общие настройки]
+    "files.autoSave": "onFocusChange", // автоматически сохранять файл при переключенни на другое окно
+    "python.terminal.activateEnvInCurrentTerminal": true, // автоматически активировать виртуальное окружение
+    
+
+    // [Настройки форматтера (расширение "Black Formatter")]
+    // Используем форматтер Black (все файлы проекта)
+    "editor.defaultFormatter": "ms-python.black-formatter", 
+    "black-formatter.args": [
+        "--line-length=79" // длина строки 79 символов (для Black)
+    ], 
+
+
+    // [Настройка расширения "autoDocstring"]
+    // Doc string с новой строки
+    "autoDocstring.startOnNewLine": true,
+    // Путь к шаблону doc_string
+    "autoDocstring.customTemplatePath": ".vscode/.mustache",
+    
+
+    // [Настрйоки линтера (расширение "PyLint")]
+    "pylint.args": [
+        "--disable=C0111" // Отлключаем ошибку doc_string
+    ],
+
+    
+    // [Настройки при работе с файлами типа: Python]
+    "[python]": {
+        "editor.rulers": [
+                80 // рисует линию, где заканчивается 80-й символ строки
+            ],    
+        // Форматирование BlackFormatter при сохранении  
+        "editor.formatOnSave": true,  
+    },
+}
