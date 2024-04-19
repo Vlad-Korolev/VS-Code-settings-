@@ -1,0 +1,33 @@
+{{! Google Docstring Template }}
+{{summaryPlaceholder}}
+{{extendedSummaryPlaceholder}}
+{{#parametersExist}}
+Аргументы:
+{{#args}}
+    {{var}} ({{typePlaceholder}}): {{descriptionPlaceholder}}
+{{/args}}
+{{#kwargs}}
+    {{var}} ({{typePlaceholder}}, необяз.): {{descriptionPlaceholder}}. (по умолчанию {{&default}})
+{{/kwargs}}
+{{/parametersExist}}
+{{#exceptionsExist}}
+
+Исключения:
+{{#exceptions}}
+    {{type}}: {{descriptionPlaceholder}}
+{{/exceptions}}
+{{/exceptionsExist}}
+{{#returnsExist}}
+
+Возвращает:
+{{#returns}}
+    {{typePlaceholder}}: {{descriptionPlaceholder}}
+{{/returns}}
+{{/returnsExist}}
+{{#yieldsExist}}
+
+Yields:
+{{#yields}}
+    {{typePlaceholder}}: {{descriptionPlaceholder}}
+{{/yields}}
+{{/yieldsExist}}
